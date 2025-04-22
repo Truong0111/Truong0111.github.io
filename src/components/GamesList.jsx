@@ -13,7 +13,7 @@ function GamesList({ featured = false }) {
             {games.map(game => (
                 <div key={game.id} className="game-card">
                     <div className="game-thumbnail">
-                        <img src={`/images/${game.thumbnail}`} alt={game.name} />
+                        <img src={`/game/${game.path}/${game.thumbnail}`} alt={game.name} />
                     </div>
                     <div className="game-info">
                         <h3>{game.name}</h3>
