@@ -1,0 +1,46 @@
+.game-page {
+    padding-bottom: 2rem;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.back-link {
+    color: #3498db;
+    font-weight: 500;
+}
+
+.game-container {
+    margin-bottom: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.game-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .game-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+.game-description, .game-instructions {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.not-found {
+    text-align: center;
+    padding: 3rem;
+}
