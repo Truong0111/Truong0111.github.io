@@ -3,7 +3,7 @@ import '../styles/UnityGame.css';
 
 function UnityGame({ gamePath }) {
     const [loading, setLoading] = useState(true);
-    const iframeSrc = `/game/${gamePath}/index.html`;
+    const iframeSrc = `${import.meta.env.BASE_URL}game/${gamePath}/index.html`;
 
     return (
         <div className="unity-game-wrapper">
@@ -19,7 +19,7 @@ function UnityGame({ gamePath }) {
                 src={iframeSrc}
                 title={`Unity Game - ${gamePath}`}
                 width="100%"
-                height="600"
+                height="640"
                 allowFullScreen
                 onLoad={() => setLoading(false)}
             />

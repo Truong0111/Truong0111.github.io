@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | SpaceEscape</title>
-    <link rel="shortcut icon" href="/game/space_escape/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="/game/space_escape/TemplateData/style.css">
+    <link rel="shortcut icon" href="./TemplateData/favicon.ico">
+    <link rel="stylesheet" href="./TemplateData/style.css">
 </head>
 <body>
 <div id="unity-container" class="unity-desktop">
@@ -50,13 +50,13 @@
         updateBannerVisibility();
     }
 
-    let buildUrl = "/game/space_escape/Build";
+    let buildUrl = "./Build";
     let loaderUrl = buildUrl + "/Builds.loader.js";
     let config = {
         dataUrl: buildUrl + "/Builds.data.br",
         frameworkUrl: buildUrl + "/Builds.framework.js.br",
         codeUrl: buildUrl + "/Builds.wasm.br",
-        streamingAssetsUrl: "/game/space_escape/StreamingAssets",
+        streamingAssetsUrl: "./Build/StreamingAssets",
         companyName: "ScaryStudio",
         productName: "SpaceEscape",
         productVersion: "0.0.1",
@@ -72,8 +72,8 @@
         canvas.className = "unity-mobile";
         unityShowBanner('WebGL builds are not supported on mobile devices.');
     } else {
-        canvas.style.width = "1080px";
-        canvas.style.height = "1920px";
+        canvas.style.width = "360px";
+        canvas.style.height = "640px";
     }
 
     loadingBar.style.display = "block";
